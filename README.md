@@ -1,7 +1,9 @@
 # Ubisense Take-Home exercise for Software Solutions Engineer 
 
 Your task is to take the following design and build a functional version using a JavaScript framework of your choice (Vue.js, React etc.). We use Vue.js at Ubisense so that is strongly preferred if you have existing experience. 
-There is no time limit for this exercise but ideally you shouldn't need to spend more than a couple of hours. 
+There is no time limit for this exercise but ideally you shouldn't be spending more than a couple of hours on your solution. 
+
+
 The application is a dashboard that displays the current status of work stations in an assembly line.
 
 ![](screenshot.png)
@@ -30,7 +32,7 @@ Your application only needs to fetch data from these APIs once (e.g. at startup)
 ### Things to consider
 
 - **Missing details in the mockups.** In our team a lot of the design details are left up to the developer. We need to be able to tackle basic design tasks without leaning on a separate designer. The mockups don't show you how to handle the case where the time elapsed has exceeded the cycle time so you will need to come up with a way to represent this.
-- **Responsiveness*.* Think about how your application is displayed on different sized screens. You don't need to create a completely separate mobile interface, but your design also shouldn't completely break at smaller screen sizes.
+- **Responsiveness.** Think about how your application is displayed on different sized screens. You don't need to create a completely separate mobile interface, but your design also shouldn't completely break at smaller screen sizes.
 
 ### Things you can ignore
 
@@ -41,7 +43,7 @@ Your application only needs to fetch data from these APIs once (e.g. at startup)
 
 We would like to see both your source code and the finished application. You can do this however works best for you but some options to consider are:
 
-- alink to a git repo and a running copy of the site deployed to a free static site host e.g GitHub pages or [Netlify](https://www.netlify.com/)
+- a link to a git repo and a running copy of the site deployed to a free static site host e.g GitHub pages or [Netlify](https://www.netlify.com/)
 - a link to a [CodeSandbox](https://codesandbox.io/)
 - the project files plus some simple instructions on how to run your application locally
 
