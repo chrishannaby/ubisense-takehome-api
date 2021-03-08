@@ -17,14 +17,24 @@ Your application should fetch all of the data that it uses from the following si
 You can quickly test out these APIs by visiting the URL in your web browser or using cURL:
 
 ```bash
-~
 ❯ curl https://ubisense-takehome-api.netlify.app/.netlify/functions/engines
-[{"id":"604676cf40ef9e9137f831e7","serialNumber":"121612129","model":"5R","image":"https://i.postimg.cc/MKbJTkrx/5R.jpg"},{"id":"60467703c7e7ca6bca3b598c","serialNumber":"342612171","model":"2R","image":"https://i.postimg.cc/RVzz4CdX/2R.jpg"},{"id":"6046770b70a8ffd3e95e7dc8","serialNumber":"9232842345","model":"8R","image":"https://i.postimg.cc/cLxytDV3/8R.png"},{"id":"604677132b5381c3d19a0dcc","serialNumber":"784213414","model":"5R","image":"https://i.postimg.cc/MKbJTkrx/5R.jpg"},{"id":"6046771b40c3fce9a6f8c11f","serialNumber":"4315112123","model":"2R","image":"https://i.postimg.cc/RVzz4CdX/2R.jpg"}]%
+[
+  {"id":"604676cf40ef9e9137f831e7","serialNumber":"121612129","model":"5R","image":"https://i.postimg.cc/MKbJTkrx/5R.jpg"},
+  {"id":"60467703c7e7ca6bca3b598c","serialNumber":"342612171","model":"2R","image":"https://i.postimg.cc/RVzz4CdX/2R.jpg"},
+  {"id":"6046770b70a8ffd3e95e7dc8","serialNumber":"9232842345","model":"8R","image":"https://i.postimg.cc/cLxytDV3/8R.png"},
+  {"id":"604677132b5381c3d19a0dcc","serialNumber":"784213414","model":"5R","image":"https://i.postimg.cc/MKbJTkrx/5R.jpg"},
+  {"id":"6046771b40c3fce9a6f8c11f","serialNumber":"4315112123","model":"2R","image":"https://i.postimg.cc/RVzz4CdX/2R.jpg"}
+]
 ```
 
 ```bash
 ❯ curl https://ubisense-takehome-api.netlify.app/.netlify/functions/workstations
-[{"name":"Assembly A","cycleTimeHrs":1.5,"currentProduct":{"id":"604676cf40ef9e9137f831e7","entryTime":1615229929818}},{"name":"Assembly B","cycleTimeHrs":1,"currentProduct":{"id":"604676cf40ef9e9137f831e7","entryTime":1615230589818}},{"name":"Assembly C","cycleTimeHrs":2,"currentProduct":null},{"name":"Inspection","cycleTimeHrs":0.5,"currentProduct":{"id":"604676cf40ef9e9137f831e7","entryTime":1615231489818}}]%
+[
+  {"name":"Assembly A","cycleTimeHrs":1.5,"currentProduct":{"id":"604676cf40ef9e9137f831e7","entryTime":1615229929818}},
+  {"name":"Assembly B","cycleTimeHrs":1,"currentProduct":{"id":"604676cf40ef9e9137f831e7","entryTime":1615230589818}},
+  {"name":"Assembly C","cycleTimeHrs":2,"currentProduct":null},
+  {"name":"Inspection","cycleTimeHrs":0.5,"currentProduct":{"id":"604676cf40ef9e9137f831e7","entryTime":1615231489818}}
+]
 ```
 
 Your application only needs to fetch data from these APIs once (e.g. at startup) you don't need to refresh the data after that.
