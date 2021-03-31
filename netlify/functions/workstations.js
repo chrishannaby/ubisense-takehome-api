@@ -1,7 +1,10 @@
-exports.handler = async function(event, context) {
+exports.handler = async function (event, context) {
   const now = new Date().getTime();
   return {
     statusCode: 200,
+    headers: {
+      'Access-Control-Allow-Origin': '*',
+    },
     body: JSON.stringify([
       {
         name: "Assembly A",
